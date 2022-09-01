@@ -1,0 +1,1017 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: hsla(280, 100%, 45%);
+  --secondary-color: hsla(215, 100%, 15%);
+  --white-text: hsla(300, 100%, 100%);
+  --background-color: hsla(217, 100%, 96%);
+  --border-radius: 18px;
+  --card-shadow: 3px 3px 10px 0px hsla(280, 100%, 45%, 0.2);
+}
+
+/*===================
+Common Styles
+===================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.card {
+  display: inline-flex;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+}
+
+.col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+/*===================
+End of Common Styles
+===================*/
+
+/*===================
+Header
+===================*/
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 10%;
+  height: 3.5rem;
+}
+
+.header-card .logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.header-card .brand-name {
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.header-text {
+  font-size: 1.3rem;
+}
+
+/*===================
+End of Header
+===================*/
+
+/*===================
+Section 1
+===================*/
+
+.section-1 {
+  width: 100%;
+  height: 48vh;
+  margin: 1rem 0 0 0;
+}
+
+.section-1-row-1 {
+  display: flex;
+  justify-content: space-evenly;
+  height: 15rem;
+  width: 100%;
+}
+
+.image-3d {
+  align-self: flex-end;
+  height: 8rem;
+  width: 8rem;
+}
+
+.card.game-card {
+  height: 9rem;
+  min-width: 245px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.game-card-text {
+  padding: 1rem;
+}
+
+.game-thumbnail {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: var(--border-radius);
+}
+
+.game-title {
+  font-weight: 800;
+  color: #000;
+}
+
+.game-genre {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.section-1-row-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin: 1rem 0 0 0;
+}
+
+.section-1-row-2 h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+.section-1-row-2 h1 span {
+  padding: 0.4rem;
+  font-weight: 800;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 45px;
+}
+
+.section-1-row-2 p {
+  font-size: 1.7rem;
+  color: var(--secondary-color);
+  margin: 2rem 0 2rem 0;
+}
+
+.section-1-row-2 button {
+  width: 8.2rem;
+  height: 2.5rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.section-1-row-2 button:hover {
+  background-color: #fff;
+  color: #000;
+  border: solid 1px #000;
+}
+/*===================
+End of Section 1
+===================*/
+
+/*===================
+Section 2
+===================*/
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/background-arms.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 4rem 0 0 0;
+}
+
+.section-2-game-row {
+  display: flex;
+  justify-content: space-evenly;
+  height: 12rem;
+  width: 100%;
+}
+
+/*===================
+End of Section 2
+===================*/
+
+/*===================
+Section 3
+===================*/
+.section-3 {
+  width: 100%;
+  height: 50vh;
+  margin: 1rem 0 0 0;
+}
+
+.section-3-row-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 4rem 0 0 0;
+}
+
+.section-3-row-1 h2 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  padding: 2rem 0 2.5rem 0;
+}
+
+.section-3-row-1 p {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  padding: 0 0 2rem 0;
+}
+
+.section-3-row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+.perk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 14rem;
+  margin: 0 3rem;
+}
+
+.perk i {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+}
+
+.perk h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1.5rem 0 3rem 0;
+  color: var(--secondary-color);
+}
+
+.perk p {
+  color: var(--secondary-color);
+}
+/*===================
+End of Section 3
+===================*/
+/*===================
+Section 4
+===================*/
+.section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 4rem;
+  background-image: url(./assets/background-side-arm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -200px;
+}
+
+.section-4 .content {
+  width: 85%;
+}
+
+.section-4 h2 {
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+.section-4 p {
+  font-weight: 500;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  line-height: 3.8rem;
+  color: var(--secondary-color);
+}
+
+.section-4 p span {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 0.4rem;
+  border-radius: 45px;
+}
+
+.section-4 button {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 45px;
+  padding: 1.2rem 0.4rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.section-4 button:hover {
+  background-color: var(--primary-color);
+}
+/*===================
+End of Section 4
+===================*/
+/*===================
+Section 5
+===================*/
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background-image: url(./assets/background-space.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.section-5 .image-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: hsla(280, 100%, 45%, 0.75);
+}
+
+.section-5-row-1 {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.section-5-row-1 h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 3rem 0;
+}
+
+.section-5-row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  /* position: relative; */
+}
+
+.section-5-row-2 .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  text-align: center;
+}
+
+.section-5-row-2 .item + .item {
+  margin-left: 5rem;
+}
+
+.section-5 .item h3 {
+  font-weight: 800;
+  margin: 2rem 0;
+}
+
+.section-5-row-3 {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+
+/*===================
+End of Section 5
+===================*/
+/*===================
+Section 6
+===================*/
+.section-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section-6-title {
+  width: 100%;
+  text-align: center;
+}
+
+.section-6-title h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  padding: 2rem 0 2.5rem 0;
+}
+
+.team-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member {
+  width: 337px;
+  height: 396px;
+  position: relative;
+}
+
+.member img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 80%;
+}
+
+.member .name-title {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 0.8rem;
+  z-index: 100;
+}
+
+.member .name-title h3 {
+  color: var(--secondary-color);
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.member .name-title p {
+  color: var(--secondary-color);
+  font-weight: 300;
+}
+
+.section-6 .horizontal-rule {
+  height: 1px;
+  width: 95%;
+  background-color: #000;
+}
+/*===================
+End of Section 6
+===================*/
+/*===================
+Footer
+===================*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 33vh;
+}
+
+.footer-row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  margin-bottom: 2rem;
+}
+
+.footer-row-1 .tag-line {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 10%;
+  height: 3.5rem;
+  margin-right: 2rem;
+}
+
+.footer-card .logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.footer-card .brand-name {
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.footer-row-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.footer-row-2 h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.footer-row-2 a {
+  color: var(--secondary-color);
+}
+
+.form-container {
+  width: 25vw;
+}
+
+.form-container form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-container label {
+  color: grey;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  height: 3.2rem;
+  font-size: 1rem;
+  border: solid 1px black;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.input-container button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -21px;
+  width: 8rem;
+  color: #fff;
+  font-weight: 800;
+  background-color: var(--primary-color);
+  border-radius: 45px;
+  border: none;
+}
+
+.footer-row-2 .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-row-2 .social a {
+  margin-bottom: 1rem;
+}
+
+.footer-row-3 {
+  margin: 4rem 0 1rem 0;
+}
+
+.footer-row-3 p {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  font-weight: 300;
+}
+/*===================
+End of Footer
+===================*/
+
+/*===================
+Media Queries
+===================*/
+/*===================
+Header MQs
+===================*/
+@media screen and (max-width: 1200px) {
+  .header {
+    margin: 2rem 0 0 0;
+  }
+}
+/* End of Header MQs */
+/* Section 1 MQs */
+@media screen and (min-width: 1600px) {
+  .section-1 {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-1 {
+    height: 43vh;
+    margin: 0;
+  }
+
+  .image-3d {
+    display: none;
+  }
+
+  .section-1-row-1 {
+    height: 10rem;
+  }
+
+  .section-1-row-2 {
+    margin: 0;
+  }
+
+  .section-1-row-2 h1 {
+    font-size: 3rem;
+  }
+
+  .card.game-card {
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-1 {
+    height: 36vh;
+  }
+
+  .section-1-row-1 {
+    height: 4rem;
+  }
+
+  .section-1-row-1 .game-card {
+    display: none;
+  }
+
+  .section-1-row-2 h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  .section-1-row-2 p {
+    font-size: 1.3rem;
+  }
+}
+
+/*===================
+End of Section 1 MQs
+===================*/
+/*===================
+Section 2 MQs
+===================*/
+
+@media screen and (min-width: 1920px) {
+  .section-2 {
+    height: 120vh;
+    background-size: cover;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 1920px) {
+  .section-2 {
+    background-size: 100% 140%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+  .section-2 {
+    background-size: 100% 130%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .section-2 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-2 {
+    margin: 0;
+    height: 75vh;
+  }
+
+  .section-2-game-row {
+    height: 4rem;
+  }
+
+  .col-3.spacer {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-2 {
+    height: 70vh;
+    background-position: center -80px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-2 {
+    height: 70vh;
+    background-position: center -40px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-2 {
+    height: 60vh;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/*===================
+End of Section 2 MQs
+===================*/
+/*===================
+Section 3 MQs
+===================*/
+@media screen and (max-width: 1200px) {
+  .section-3-row-1 h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-3-row-1 {
+    margin: 0;
+  }
+
+  .section-3-row-1 h2 {
+    font-size: 2.2rem;
+  }
+
+  .perk {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-3 {
+    height: 90vh;
+    /* margin: 1rem 0 0 0; */
+  }
+
+  .section-3-row-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perk {
+    margin: 0 0 3rem 0;
+  }
+
+  .perk h3 {
+    margin: 1rem 0 1.5rem 0;
+  }
+}
+
+/*===================
+End of Section 3 MQs
+===================*/
+/*===================
+Section 4 MQs
+===================*/
+
+@media screen and (min-width: 1920px) {
+  .section-4 {
+    height: 60vh;
+    margin-bottom: 4rem;
+    background-size: 100% 100%;
+    background-position: right -80px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .section-4 {
+    height: 60vh;
+    margin-bottom: 4rem;
+    background-size: 90% 90%;
+    background-position: right -40px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .section-4 {
+    height: 50vh;
+    background-size: 80% 80%;
+    background-position: right -10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-4 {
+    height: 40vh;
+    background-size: 75% 75%;
+    background-position: right -5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-4 {
+    height: 40vh;
+    background-image: none;
+  }
+
+  .section-4 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-4 p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-4 {
+    height: 40vh;
+    background-image: none;
+  }
+
+  .section-4 p {
+    font-size: 1.8rem;
+  }
+}
+/*===================
+End of Section 4 MQs
+===================*/
+/*===================
+Section 5 MQs
+===================*/
+@media screen and (max-width: 1200px) {
+  .section-5-row-2 {
+    justify-content: space-evenly;
+  }
+
+  .section-5-row-2 .item + .item {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-5 {
+    height: 80vh;
+  }
+
+  .section-5-row-1 {
+    padding: 1rem 0 0 0;
+  }
+
+  .section-5-row-1 h2 {
+    margin: 1.5rem 0;
+  }
+
+  .section-5-row-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-5-row-2 .item {
+    margin: 1.5rem 0;
+  }
+
+  .section-5 .item h3 {
+    margin: 1.5rem 0;
+  }
+
+  .section-5-row-3 {
+    width: 98%;
+  }
+
+  .robot-img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .robot-img {
+    display: none;
+  }
+}
+
+/*===================
+End of Section 5 MQs
+===================*/
+/*===================
+Section 6 MQs
+===================*/
+
+@media screen and (max-width: 1500px) {
+  .team-members {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .member {
+    width: 305px;
+    height: 325px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .member {
+    width: 275px;
+    height: 305px;
+  }
+}
+
+/*===================
+End of Section 6 MQs
+===================*/
+/*===================
+Footer MQs
+===================*/
+@media screen and (max-width: 1500px) {
+  .footer-row-1 {
+    margin-top: 2rem;
+  }
+
+  .footer-row-1 .tag-line {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .input-container input {
+    height: 2.2rem;
+  }
+
+  .input-container button {
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    height: 52vh;
+  }
+
+  .footer-row-1 .tag-line {
+    font-size: 1.5rem;
+  }
+
+  .footer-row-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-row-2 h3 {
+    margin-bottom: 1rem;
+  }
+  .footer-row-2 .form-container {
+    margin: 2.2rem 0;
+  }
+
+  .footer-row-3 {
+    margin: 2rem 0 1rem 0;
+  }
+}
+/*===================
+End of Footer MQs
+===================*/
+/*===================
+End of Media Queries
+===================*/
