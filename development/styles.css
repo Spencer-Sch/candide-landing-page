@@ -765,9 +765,22 @@ Section 1 MQs
     margin: 4rem 0 2rem 0;
   }
 
-  /* .section-1-row-3 {
+  .card.game-card {
+    height: 6rem;
+  }
 
-  } */
+  .game-thumbnail {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .game-title {
+    font-size: 1rem;
+  }
+
+  .game-genre {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
