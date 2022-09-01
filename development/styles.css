@@ -1166,6 +1166,13 @@ Section 5 MQs
   }
 } */
 
+@media screen and (max-width: 1700px) {
+  .robot-img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .section-5-row-2 {
     justify-content: space-evenly;
@@ -1173,6 +1180,11 @@ Section 5 MQs
 
   .section-5-row-2 .item + .item {
     margin-left: 0;
+  }
+
+  .robot-img {
+    height: 180px;
+    width: 180px;
   }
 }
 
