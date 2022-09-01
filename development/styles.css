@@ -1321,7 +1321,8 @@ Footer MQs
 
 @media screen and (max-width: 900px) {
   footer {
-    min-height: 80vh;
+    max-height: 80vh;
+    min-height: 550px;
     margin-bottom: 1rem;
   }
 
