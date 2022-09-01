@@ -202,7 +202,7 @@ Section 1
   margin: 1rem 0;
 }
 
-.section-1-row-3 img.image-3d {
+.section-1-row-3 .image-3d {
   height: 50px;
   width: 50px;
   position: absolute;
@@ -231,6 +231,7 @@ Section 2
   justify-content: space-evenly;
   height: 12rem;
   width: 100%;
+  position: relative;
 }
 
 /*===================
@@ -874,9 +875,16 @@ Section 2 MQs
 
 @media screen and (max-width: 700px) {
   .section-2 {
-    height: 60vh;
+    height: 70vh;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+  }
+
+  .section-2-game-row.mobile-only .image-3d {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -13px;
   }
 
   /* .section-2-game-row {
