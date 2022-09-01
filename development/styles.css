@@ -645,6 +645,9 @@ End of Footer
 /*===================
 Media Queries
 ===================*/
+/*===================
+Common Queries
+===================*/
 @media screen and (min-width: 701px) {
   .mobile-only {
     display: none;
@@ -656,6 +659,9 @@ Media Queries
     display: none;
   }
 }
+/*===================
+End of Common Queries
+===================*/
 /*===================
 Header MQs
 ===================*/
