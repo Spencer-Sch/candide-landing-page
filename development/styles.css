@@ -1263,8 +1263,8 @@ Section 6 MQs
   }
 }
 
-/* @media screen and (max-width: 900px) { */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 700px) { */
   .section-6 {
     max-height: 9999vh;
     min-height: 100vh;
