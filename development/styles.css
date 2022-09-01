@@ -880,15 +880,19 @@ Section 2 MQs
     /* height: 50vh; */
     height: 100vh;
     margin: 0;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100% 100%; */
   }
 }
 
 @media screen and (max-width: 1200px) {
   .section-2 {
     margin: 0;
-    /* height: 75vh; */
-    height: 50vh;
+    height: 75vh;
+    /* height: 50vh; */
+    background-position: center;
+    background-size: cover;
   }
 
   .section-2-game-row {
@@ -902,9 +906,11 @@ Section 2 MQs
 
 @media screen and (max-width: 1000px) {
   .section-2 {
-    /* height: 70vh; */
-    height: 50vh;
+    height: 70vh;
+    /* height: 50vh; */
     margin-top: 0;
+    background-position: center;
+    background-size: cover;
   }
 }
 
