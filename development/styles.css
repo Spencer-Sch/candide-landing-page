@@ -669,7 +669,16 @@ End of Common Queries
 /*===================
 Header MQs
 ===================*/
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
+  .header {
+    margin: 2rem 0 0 0;
+  }
+
+  .header-text {
+    display: none;
+  }
+} */
+@media screen and (max-width: 900px) {
   .header {
     margin: 2rem 0 0 0;
   }
