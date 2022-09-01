@@ -1202,7 +1202,17 @@ Section 6 MQs
   }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) { */
+@media screen and (max-width: 700px) {
+  .section-6 {
+    max-height: 9999vh;
+    min-height: 100vh;
+  }
+
+  .section-6-title h2 {
+    font-size: 2.2rem;
+  }
+
   .member {
     width: 275px;
     height: 305px;
