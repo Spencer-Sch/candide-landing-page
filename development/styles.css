@@ -1062,13 +1062,22 @@ Section 4 MQs
 
 @media screen and (max-width: 700px) {
   .section-4 {
-    min-height: 500px;
+    min-height: 300px;
     background-image: none;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-4 h2 {
+    font-size: 1.6rem;
   }
 
   .section-4 p {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+
+  .section-4 p span {
+    padding: 0.2rem 0.4rem;
   }
 }
 
