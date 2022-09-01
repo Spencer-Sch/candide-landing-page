@@ -526,6 +526,7 @@ footer {
   align-items: center;
   width: 100%;
   min-height: 33vh;
+  margin-top: 1rem;
 }
 
 .footer-row-1 {
@@ -1323,6 +1324,7 @@ Footer MQs
   footer {
     max-height: 80vh;
     min-height: 550px;
+    margin-top: 0;
     margin-bottom: 1rem;
   }
 
@@ -1367,6 +1369,10 @@ Footer MQs
 }
 
 @media screen and (max-width: 700px) {
+  footer {
+    margin-top: 0;
+  }
+
   .form-container {
     width: 45vw;
   }
