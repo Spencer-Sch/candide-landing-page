@@ -1138,6 +1138,11 @@ End of Section 3 MQs
 /*===================
 Section 4 MQs
 ===================*/
+@media screen and (min-width: 2100px) {
+  .section-4 {
+    margin-top: 0;
+  }
+}
 
 @media screen and (min-width: 1920px) {
   .section-4 {
