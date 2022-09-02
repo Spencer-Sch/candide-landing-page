@@ -1086,6 +1086,7 @@ Section 3 MQs
 @media screen and (max-width: 700px) {
   .section-3 {
     min-height: 910px;
+    margin-bottom: 0;
   }
 
   .section-3-row-1 {
