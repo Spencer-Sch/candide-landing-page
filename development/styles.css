@@ -848,9 +848,9 @@ Section 1 MQs
   .section-1 {
     height: 38vh;
   }
-}
+} */
 
-@media screen and (max-width: 1200px) and (max-height: 1300px) {
+/* @media screen and (max-width: 1200px) and (max-height: 1300px) {
   .section-1 {
     height: 39vh;
   }
@@ -1248,6 +1248,29 @@ Section 4 MQs
 
   .section-4 p span {
     padding: 0.2rem 0.4rem;
+  }
+}
+
+/* Landscape / square-ish screens */
+@media screen and (min-width: 901px) and (max-width: 1365px) and (max-height: 890px) and (orientation: landscape) {
+  /* body {
+    background-color: lightseagreen;
+  } */
+
+  .section-4 {
+    height: 60vh;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) and (max-height: 890px) and (orientation: landscape) {
+  /* body {
+    background-color: lightseagreen;
+  } */
+
+  .section-4 {
+    height: 60vh;
+    margin-bottom: 2rem;
   }
 }
 
