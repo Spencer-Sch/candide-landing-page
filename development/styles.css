@@ -1026,6 +1026,15 @@ End of Section 2 MQs
 /*===================
 Section 3 MQs
 ===================*/
+@media screen and (min-width: 2100px) {
+  .section-3 {
+    margin-top: 0;
+  }
+  .section-3-row-1 {
+    margin: 0;
+  }
+}
+
 /* @media screen and (max-width: 1500px) { */
 @media screen and (max-width: 1600px) {
   .section-3 {
