@@ -705,9 +705,15 @@ End of Header MQs
 /*===================
 Section 1 MQs
 ===================*/
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1920px) {
   .section-1 {
-    height: 50vh;
+    height: 45vh; 
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  .section-1 {
+    height: 45vh;
   }
 }
 
