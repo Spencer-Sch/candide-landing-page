@@ -1393,6 +1393,12 @@ Section 5 MQs
 
 /* Landscape / square-ish screen size */
 
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (max-height: 1500px) {
+  .section-5 {
+    max-height: 600px;
+  }
+}
+
 @media screen and (min-width: 1180px) and (max-width: 1919px) and (max-height: 890px) and (orientation: landscape) {
   /* body {
     background-color: pink;
