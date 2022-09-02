@@ -1196,16 +1196,17 @@ Section 4 MQs
 
 @media screen and (max-width: 1200px) {
   .section-4 {
-    height: 40vh;
+    /* height: 42vh; */
+    height: 42vh;
     background-size: 75% 75%;
     background-position: right -5px;
-    margin-top: 4rem;
+    margin: 4rem 0 0 0;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .section-4 {
-    height: 55vh;
+    height: 35vh;
     margin: 2rem 0;
     background-image: none;
     margin: 0;
