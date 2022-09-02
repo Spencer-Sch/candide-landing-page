@@ -917,8 +917,8 @@ Section 2 MQs
 
 @media screen and (max-width: 1545px) {
   .section-2 {
-    /* height: 100vh; */
-    height: 80vh;
+    height: 100vh;
+    /* height: 80vh; */
     margin-top: 3rem;
     background-position: center;
     background-size: cover;
