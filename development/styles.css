@@ -1293,6 +1293,29 @@ Section 5 MQs
   }
 } */
 
+@media screen and (min-width: 2000px) {
+  body {
+    background-color: aquamarine;
+  }
+  .section-5 {
+    max-height: 60vh;
+  }
+
+  .section-5 .image-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-5-row-1 h2 {
+    font-size: 3.5rem;
+  }
+
+  .section-5-row-2 {
+    margin-bottom: 5rem;
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .robot-img {
     height: 200px;
