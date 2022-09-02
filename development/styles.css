@@ -874,11 +874,28 @@ End of Section 1 MQs
 Section 2 MQs
 ===================*/
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 2100px) {
   .section-2 {
-    height: 120vh;
+    height: 200px;
+    background-image: none;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2099px) {
+  .section-2 {
+    height: 110vh;
     background-size: cover;
-    margin-top: 2rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1545px) and (max-width: 1920px) {
+  .section-2 {
+    height: 110vh;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -898,11 +915,11 @@ Section 2 MQs
   }
 } */
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1545px) {
   .section-2 {
-    /* height: 50vh; */
-    height: 100vh;
-    margin: 0;
+    /* height: 100vh; */
+    height: 80vh;
+    margin-top: 3rem;
     background-position: center;
     background-size: cover;
     /* background-size: 100% 100%; */
@@ -939,7 +956,7 @@ Section 2 MQs
 
 @media screen and (max-width: 900px) {
   .section-2 {
-    height: 58vh;
+    height: 50vh;
     min-height:500px;
     /* background-position: center -40px; */
     /* background-size: 100% 50%; */
