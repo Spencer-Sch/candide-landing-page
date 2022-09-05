@@ -619,11 +619,18 @@ Section 6
   position: relative;
 }
 
-.member img {
+.member__img--silhouette {
   position: absolute;
   top: 20px;
   left: 20px;
   height: 80%;
+}
+
+.member__img--non-silhouette {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80%;
 }
 
 .member .name-title {
@@ -1276,6 +1283,7 @@ Section 4 MQs
 @media screen and (min-width: 901px) and (max-width: 1365px) and (max-height: 890px) and (orientation: landscape) {
   .section-4 {
     height: 60vh;
+    min-height: 400px;
     margin-bottom: 2rem;
   }
 }
@@ -1283,6 +1291,7 @@ Section 4 MQs
 @media screen and (min-width: 701px) and (max-width: 900px) and (max-height: 890px) and (orientation: landscape) {
   .section-4 {
     height: 60vh;
+    min-height: 400px;
     margin-bottom: 2rem;
   }
 }
