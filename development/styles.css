@@ -480,11 +480,18 @@ Section 6
   position: relative;
 }
 
-.member img {
+.member__img--silhouette {
   position: absolute;
   top: 20px;
   left: 20px;
   height: 80%;
+}
+
+.member__img--non-silhouette {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80%;
 }
 
 .member .name-title {
