@@ -494,6 +494,15 @@ Section 6
   width: 80%;
 }
 
+.member__img--empty-blue {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80%;
+  height: 71.5%;
+  background-image: linear-gradient(#4284fc, #2d3eed);
+}
+
 .member .name-title {
   position: absolute;
   bottom: 20px;
