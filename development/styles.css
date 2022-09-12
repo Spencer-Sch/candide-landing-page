@@ -25,6 +25,7 @@ Common Styles
 
 body {
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 .card {
@@ -541,6 +542,7 @@ footer {
   width: 100%;
   min-height: 33vh;
   margin-top: 1rem;
+  position: relative;
 }
 
 .footer-row-1 {
@@ -659,6 +661,44 @@ footer {
 }
 /*===================
 End of Footer
+===================*/
+/*===================
+Pop-up
+===================*/
+.pop-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 75px;
+  border: solid 1.5px var(--primary-color);
+  z-index: 100;
+  position: absolute;
+  opacity: 0;
+  right: 45px;
+  transform: translateX(445px);
+
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+}
+
+.pop-up--show {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.pop-up i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-right: 1rem;
+}
+
+.pop-up p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/*===================
+End of Pop-up
 ===================*/
 
 /*===================
@@ -1367,6 +1407,61 @@ Footer MQs
 
 /*===================
 End of Footer MQs
+===================*/
+/*===================
+Pop-up MQs
+===================*/
+
+@media screen and (max-width: 900px) {
+  .pop-up {
+    width: 280px;
+    height: 60px;
+    top: 80px;
+    right: 10px;
+    transform: translateX(410px);
+  }
+
+  .pop-up--show {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .pop-up i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .pop-up p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .pop-up {
+    width: 300px;
+    height: 65px;
+    top: 40px;
+    right: 10px;
+    transform: translateX(410px);
+  }
+
+  .pop-up--show {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .pop-up i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .pop-up p {
+    font-size: 1rem;
+  }
+}
+
+/*===================
+End of Pop-up MQs
 ===================*/
 /*===================
 End of Media Queries
