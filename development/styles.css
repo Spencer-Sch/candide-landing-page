@@ -1308,8 +1308,12 @@ Section 6 MQs
 
 @media screen and (max-width: 1200px) {
   .member {
-    width: 305px;
-    height: 325px;
+    width: 285px;
+    height: 345px;
+  }
+
+  .member__img--empty-blue {
+    height: 80%;
   }
 }
 
@@ -1323,9 +1327,8 @@ Section 6 MQs
     font-size: 2.2rem;
   }
 
-  .member {
-    width: 275px;
-    height: 305px;
+  .member__img--empty-blue {
+    height: 80%;
   }
 }
 
