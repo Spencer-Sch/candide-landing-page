@@ -859,10 +859,10 @@ Section 2 MQs
   }
 }
 
-@media screen and (min-width: 1920px) and (max-width: 2099px) {
+@media screen and (min-width: 1921px) and (max-width: 2099px) {
   .section-2 {
-    height: 110vh;
-    background-size: cover;
+    height: 200px;
+    background-image: none;
     margin: 0;
   }
 }
@@ -873,14 +873,6 @@ Section 2 MQs
     margin: 0;
     background-position: center;
     background-size: cover;
-  }
-}
-
-@media screen and (min-width: 1601px) and (max-height: 901px) {
-  .section-2 {
-    height: 200px;
-    background-image: none;
-    margin: 0;
   }
 }
 
