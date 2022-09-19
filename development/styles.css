@@ -71,7 +71,7 @@ Header
   height: 3.5rem;
 }
 
-.header-card .logo {
+.header-card__logo {
   height: 3rem;
   width: 3rem;
 }
@@ -574,7 +574,7 @@ footer {
   margin-right: 2rem;
 }
 
-.footer-card .logo {
+.footer-card__logo {
   height: 3rem;
   width: 3rem;
 }
