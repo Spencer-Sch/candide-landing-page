@@ -6,6 +6,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 
 :root {
   --primary-color: hsla(280, 100%, 45%);
@@ -31,8 +32,13 @@ Common Styles
   font-weight: 400;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 .card {
@@ -94,14 +100,15 @@ Header
   height: 3.5rem;
 }
 
-.header-card .logo {
+.header-card__logo {
   height: 3rem;
   width: 3rem;
 }
 
 .header-card .brand-name {
-  font-weight: 900;
-  font-size: 1.2rem;
+  font-family: 'Suez One', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
   margin: 1rem 1rem 1rem 0;
 }
 
@@ -633,6 +640,23 @@ Section 6
   width: 80%;
 }
 
+.member__img--empty-blue {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80%;
+  height: 82%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#4284fc),
+    to(#2d3eed)
+  );
+  background-image: -o-linear-gradient(#4284fc, #2d3eed);
+  background-image: linear-gradient(#4284fc, #2d3eed);
+}
+
 .member .name-title {
   position: absolute;
   bottom: 20px;
@@ -678,6 +702,7 @@ footer {
   width: 100%;
   min-height: 33vh;
   margin-top: 1rem;
+  position: relative;
 }
 
 .footer-row-1 {
@@ -715,14 +740,15 @@ footer {
   margin-right: 2rem;
 }
 
-.footer-card .logo {
+.footer-card__logo {
   height: 3rem;
   width: 3rem;
 }
 
 .footer-card .brand-name {
-  font-weight: 900;
-  font-size: 1.2rem;
+  font-family: 'Suez One', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
   margin: 1rem 1rem 1rem 0;
 }
 
@@ -826,6 +852,63 @@ footer {
 }
 /*===================
 End of Footer
+===================*/
+/*===================
+Pop-up
+===================*/
+.pop-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 400px;
+  height: 75px;
+  border: solid 1.5px var(--primary-color);
+  z-index: 100;
+  position: absolute;
+  opacity: 0;
+  right: 45px;
+  -webkit-transform: translateX(445px);
+  -ms-transform: translateX(445px);
+  transform: translateX(445px);
+
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.3s ease-in-out;
+
+  transition: opacity 0.5s ease, -webkit-transform 0.3s ease-in-out;
+
+  -o-transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease,
+    -webkit-transform 0.3s ease-in-out;
+}
+
+.pop-up--show {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.pop-up i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-right: 1rem;
+}
+
+.pop-up p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/*===================
+End of Pop-up
 ===================*/
 
 /*===================
@@ -979,10 +1062,10 @@ Section 2 MQs
   }
 }
 
-@media screen and (min-width: 1920px) and (max-width: 2099px) {
+@media screen and (min-width: 1921px) and (max-width: 2099px) {
   .section-2 {
-    height: 110vh;
-    background-size: cover;
+    height: 200px;
+    background-image: none;
     margin: 0;
   }
 }
@@ -993,14 +1076,6 @@ Section 2 MQs
     margin: 0;
     background-position: center;
     background-size: cover;
-  }
-}
-
-@media screen and (min-width: 1601px) and (max-height: 901px) {
-  .section-2 {
-    height: 200px;
-    background-image: none;
-    margin: 0;
   }
 }
 
@@ -1458,8 +1533,12 @@ Section 6 MQs
 
 @media screen and (max-width: 1200px) {
   .member {
-    width: 305px;
-    height: 325px;
+    width: 285px;
+    height: 345px;
+  }
+
+  .member__img--empty-blue {
+    height: 80%;
   }
 }
 
@@ -1473,9 +1552,8 @@ Section 6 MQs
     font-size: 2.2rem;
   }
 
-  .member {
-    width: 275px;
-    height: 305px;
+  .member__img--empty-blue {
+    height: 80%;
   }
 }
 
@@ -1569,6 +1647,69 @@ Footer MQs
 
 /*===================
 End of Footer MQs
+===================*/
+/*===================
+Pop-up MQs
+===================*/
+
+@media screen and (max-width: 900px) {
+  .pop-up {
+    width: 280px;
+    height: 60px;
+    top: 80px;
+    right: 10px;
+    -webkit-transform: translateX(410px);
+    -ms-transform: translateX(410px);
+    transform: translateX(410px);
+  }
+
+  .pop-up--show {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .pop-up i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .pop-up p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .pop-up {
+    width: 300px;
+    height: 65px;
+    top: 40px;
+    right: 10px;
+    -webkit-transform: translateX(410px);
+    -ms-transform: translateX(410px);
+    transform: translateX(410px);
+  }
+
+  .pop-up--show {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .pop-up i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .pop-up p {
+    font-size: 1rem;
+  }
+}
+
+/*===================
+End of Pop-up MQs
 ===================*/
 /*===================
 End of Media Queries
