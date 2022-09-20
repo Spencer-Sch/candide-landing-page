@@ -1,6 +1,6 @@
 # Candide Landing Page
 
-I'm working to build a clone of the current wix site in HTML/CSS for the start-up candide.site.
+I built a clone of the company's landing page in HTML/CSS.
 
 Temp host for my clone can be seen here: https://fanciful-hummingbird-900183.netlify.app/ (production version)
 
@@ -11,4 +11,8 @@ Temp host for my clone can be seen here: https://fanciful-hummingbird-900183.net
 - Desktop View
   - The desktop version of the site is finished.
 - Mobile View
-  - The mobile version of the site is in development.
+
+  - The mobile version of the site is finished.
+
+- "Subscribe to updates" form
+  - Working on an email fowarding solution
