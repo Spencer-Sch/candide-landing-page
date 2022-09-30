@@ -479,6 +479,7 @@ Section 6
 .team-members {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .member {
