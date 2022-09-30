@@ -488,7 +488,7 @@ Section 6
   position: relative;
 }
 
-.member__img--non-silhouette {
+.member__img {
   position: absolute;
   top: 20px;
   left: 20px;
