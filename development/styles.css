@@ -597,6 +597,10 @@ footer {
   color: var(--secondary-color);
 }
 
+.footer-row-2 a:hover {
+  color: var(--primary-color);
+}
+
 .form-container {
   width: 25vw;
 }
