@@ -618,6 +618,9 @@ Section 6
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .member {
@@ -626,14 +629,7 @@ Section 6
   position: relative;
 }
 
-.member__img--silhouette {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 80%;
-}
-
-.member__img--non-silhouette {
+.member__img {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -773,6 +769,10 @@ footer {
   color: var(--secondary-color);
 }
 
+.footer-row-2 a:hover {
+  color: var(--primary-color);
+}
+
 .form-container {
   width: 25vw;
 }
@@ -797,21 +797,25 @@ footer {
   margin-bottom: 1rem;
 }
 
-.input-container {
+.footer__input-container {
   width: 100%;
   position: relative;
 }
 
-.input-container input {
+.footer__input-container__input {
   width: 100%;
   height: 3.2rem;
   font-size: 1rem;
-  border: solid 1px black;
+  border: solid 1px var(--secondary-color);
   border-radius: 4px;
   padding: 1rem;
 }
 
-.input-container button {
+.footer__input-container__input:focus {
+  border: solid 1px var(--primary-color);
+}
+
+.footer__input-container__button {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -822,6 +826,14 @@ footer {
   background-color: var(--primary-color);
   border-radius: 45px;
   border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.footer__input-container__button:hover {
+  background-color: var(--secondary-color);
 }
 
 .footer-row-2 .social {
@@ -1072,7 +1084,7 @@ Section 2 MQs
 
 @media screen and (min-width: 1545px) and (max-width: 1920px) {
   .section-2 {
-    height: 110vh;
+    height: 118vh;
     margin: 0;
     background-position: center;
     background-size: cover;
