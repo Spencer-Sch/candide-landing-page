@@ -14,7 +14,7 @@
     <!-- Header -->
     <header class="header">
       <div class="header-card card">
-        <img class="header-card__logo" src="assets/candide_logo.png"></img>
+        <img class="header-card__logo" src="assets/candide_logo.png" />
         <p class="brand-name">Candide</p>
       </div>
       <p class="header-text">Want to rent your NFT?</p>
@@ -29,13 +29,9 @@
         </div>
         <div class="col-3 desktop-only">
           <div class="card game-card">
-            <a href="https://www.candide.site/">
               <img class="game-thumbnail" src="assets/axie-game.png" />
-            </a>
             <div class="game-card-text">
-              <a href="https://www.candide.site/">
                 <p class="game-title">Axie Infinity</p>
-              </a>
               <p class="game-genre">Strategy</p>
             </div>
           </div>
@@ -54,35 +50,23 @@
       <div class="section-1-row-3 mobile-only">
         <div class="card game-card">
           <img class="image-3d" src="assets/3d-o.png" />
-          <a href="https://www.candide.site/">
             <img class="game-thumbnail" src="assets/axie-game.png" />
-          </a>
           <div class="game-card-text">
-            <a href="https://www.candide.site/">
               <p class="game-title">Axie Infinity</p>
-            </a>
             <p class="game-genre">Strategy</p>
           </div>
         </div>
         <div class="card game-card">
-          <a href="https://www.candide.site/">
             <img class="game-thumbnail" src="assets/splinterlands.png" />
-          </a>
           <div class="game-card-text">
-            <a href="https://www.candide.site/">
               <p class="game-title">Splinterlands</p>
-            </a>
             <p class="game-genre">Battles</p>
           </div>
         </div>
         <div class="card game-card">
-          <a href="https://www.candide.site/">
             <img class="game-thumbnail" src="assets/splashscreen-game.png" />
-          </a>
           <div class="game-card-text">
-            <a href="https://www.candide.site/">
               <p class="game-title">Riplle Delete</p>
-            </a>
             <p class="game-genre">Adventure</p>
           </div>
         </div>
@@ -96,13 +80,9 @@
       <div class="section-2-game-row desktop-only">
         <div class="col-3">
           <div class="card game-card">
-            <a href="https://www.candide.site/">
               <img class="game-thumbnail" src="assets/splinterlands.png" />
-            </a>
             <div class="game-card-text">
-              <a href="https://www.candide.site/">
                 <p class="game-title">Splinterlands</p>
-              </a>
               <p class="game-genre">Battles</p>
             </div>
           </div>
@@ -110,13 +90,9 @@
         <div class="col-3 spacer"></div>
         <div class="col-3">
           <div class="card game-card">
-            <a href="https://www.candide.site/">
               <img class="game-thumbnail" src="assets/splashscreen-game.png" />
-            </a>
             <div class="game-card-text">
-              <a href="https://www.candide.site/">
                 <p class="game-title">Riplle Delete</p>
-              </a>
               <p class="game-genre">Adventure</p>
             </div>
           </div>
@@ -209,21 +185,21 @@
       <div class="team-container">
         <div class="team-members">
           <div class="member">
-            <img src="assets/sana.png"  class="member__img--non-silhouette" alt="Sana" />
+            <img src="assets/sana.png"  class="member__img" alt="Sana" />
             <div class="name-title">
               <h3>Sana</h3>
               <p>Co-founder & CEO</p>
             </div>
           </div>
           <div class="member">
-            <img src="assets/poulipoupette.png" class="member__img--non-silhouette" alt="female silhouette" />
+            <img src="assets/poulipoupette.png" class="member__img" alt="female silhouette" />
             <div class="name-title">
               <h3>Poulipoupette</h3>
               <p>Co-founder</p>
             </div>
           </div>
           <div class="member">
-            <img src="assets/arthur.png" class="member__img--non-silhouette" alt="male silhouette" />
+            <img src="assets/arthur.png" class="member__img" alt="male silhouette" />
             <div class="name-title">
               <h3>Arthur</h3>
               <p>Lead development</p>
@@ -237,14 +213,14 @@
             </div>
           </div>
           <div class="member">
-            <img src="assets/spencer.png" class="member__img--non-silhouette" alt="male silhouette" />
+            <img src="assets/spencer.png" class="member__img" alt="male silhouette" />
             <div class="name-title">
               <h3>Spencer</h3>
               <p>Front-end developer</p>
             </div>
           </div>
           <div class="member">
-            <img src="assets/yusuf.png" class="member__img--non-silhouette" alt="male silhouette" />
+            <img src="assets/yusuf.png" class="member__img" alt="male silhouette" />
             <div class="name-title">
               <h3>Yusuf</h3>
               <p>Web3 developer</p>
@@ -252,7 +228,7 @@
           </div>
           <div class="member">
             <!-- <img src="assets/ethan.webp" alt="ethan" /> -->
-            <img src="assets/ethan.png" class="member__img--non-silhouette" alt="Ethan" />
+            <img src="assets/ethan.png" class="member__img" alt="Ethan" />
             <div class="name-title">
               <h3>Ethan</h3>
               <p>Community Manager</p>
@@ -286,17 +262,18 @@
           <form id="form" action="" method="POST">
             <h3>Subscribe to updates</h3>
             <label for="email">Enter your email *</label>
-            <div class="input-container">
-              <input id="email" type="email" name="email" placeholder="example@host.com" title="Must be a valid email address" required />
-              <button type="submit">Send</button>
+            <div class="footer__input-container">
+              <input id="email" class="footer__input-container__input" type="email" name="email" placeholder="example@host.com" title="Must be a valid email address" required />
+              <button class="footer__input-container__button" type="submit">Send</button>
             </div>
           </form>
         </div>
         <div class="social">
           <h3>Social Media</h3>
-          <a href="https://discord.com/invite/FEQzj3HCSu">Discord</a>
-          <a href="https://www.linkedin.com/company/candidenft/about/">LinkedIn</a>
-          <a href="https://twitter.com/CandideNft">Twitter</a>
+          <a href="https://discord.com/invite/FEQzj3HCSu" target="_blank">Discord</a>
+          <a href="https://www.linkedin.com/company/candidenft/about/" target="_blank">LinkedIn</a>
+          <a href="https://twitter.com/CandideNft" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/candidenft/" target="_blank">Instagram</a>
         </div>
       </div>
       <div class="footer-row-3">
