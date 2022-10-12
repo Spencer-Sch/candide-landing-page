@@ -131,7 +131,6 @@ Header
   align-items: center;
   height: 100%;
   justify-content: space-evenly;
-  /* padding: 2rem; */
 }
 
 .header__whitepaper-link--mobile {
@@ -1220,10 +1219,6 @@ Section 4 MQs
     text-align: center;
   }
 
-  .section-4 h2 {
-    /* font-size: 1.5rem; */
-  }
-
   .section-4 p {
     font-size: 2rem;
   }
@@ -1460,10 +1455,6 @@ Footer MQs
 }
 
 @media screen and (max-width: 1500px) {
-  .footer-row-1 {
-    /* margin-top: 2rem; */
-  }
-
   .footer-row-1 .tag-line {
     font-size: 1.3rem;
     text-align: center;
