@@ -12,13 +12,52 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="header-card card">
-        <img class="header-card__logo" src="assets/candide_logo.png" />
-        <p class="brand-name">Candide</p>
+    <!-- Desktop Only Markup -->
+    <header class="header desktop-header">
+      <div class="header-branding__container col-3">
+        <img class="header-branding__logo" src="assets/candide_logo.png" />
+        <p class="header-branding__name">Candide</p>
       </div>
-      <p class="header-text">Want to rent your NFT?</p>
+      <div class="col-3">
+        <a href="#" class="header__whitepaper-link">Whitepaper</a>
+      </div>
+      <div class="header__social-container col-3">
+        <a href="https://discord.gg/FEQzj3HCSu">
+          <i class="header__social-container--link fa-brands fa-discord"></i>
+        </a>
+        <a href="https://www.instagram.com/candidenft/">
+          <i class="header__social-container--link fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/CandideNft">
+          <i class="header__social-container--link fa-brands fa-twitter"></i>
+        </a>
+      </div>
     </header>
+    <!-- End Desktop Only Markup -->
+    <!-- Mobile Only Markup -->
+    <header class="mobile-header">
+      <div class="header-branding__container">
+        <img class="header-branding__logo" src="assets/candide_logo.png" />
+        <p class="header-branding__name">Candide</p>
+      </div>
+      <div class="header__link-container--mobile">
+        <div class="header__social-container">
+          <a href="https://discord.gg/FEQzj3HCSu">
+            <i class="header__social-container--link fa-brands fa-discord"></i>
+          </a>
+          <a href="https://www.instagram.com/candidenft/">
+            <i class="header__social-container--link fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/CandideNft">
+            <i class="header__social-container--link fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="header__whitepaper-link--mobile">Whitepaper</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Mobile Only Markup -->
     <!-- End of Header -->
     <!-- Section 1 -->
     <section class="section-1">
@@ -227,7 +266,6 @@
             </div>
           </div>
           <div class="member">
-            <!-- <img src="assets/ethan.webp" alt="ethan" /> -->
             <img src="assets/ethan.png" class="member__img" alt="Ethan" />
             <div class="name-title">
               <h3>Ethan</h3>
@@ -243,14 +281,14 @@
     <footer>
       <div class="footer-row-1">
         <!-- Desktop Only Markup -->
-        <div class="footer-card card desktop-only">
-          <img class="footer-card__logo" src="assets/candide_logo.png"></img>
-          <p class="brand-name">Candide</p>
+        <div class="footer-branding__container desktop-only">
+          <img class="footer-branding__logo" src="assets/candide_logo.png"></img>
+          <p class="footer-branding__name">Candide</p>
         </div>
         <p class="tag-line desktop-only">The NFT rental marketplace for p2e</p>
         <!-- End of Desktop Only Markup -->
         <!-- Mobile Only Markup -->
-        <img class="footer-card__logo mobile-only" src="assets/candide_logo.png"></img>
+        <img class="footer-branding__logo mobile-only" src="assets/candide_logo.png"></img>
         <!-- End of Mobile Only Markup -->
       </div>
       <div class="footer-row-2">

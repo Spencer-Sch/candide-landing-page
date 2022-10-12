@@ -83,10 +83,73 @@ Header
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 5rem 0;
 }
 
-.header-card {
+.header-branding__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 10%;
+  height: 3.5rem;
+}
+
+.header-branding__logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+.header-branding__name {
+  font-family: 'Suez One', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  margin: 1rem 0;
+}
+
+.header__whitepaper-link {
+  color: var(--secondary-color);
+  border: solid 1px var(--secondary-color);
+  border-radius: 45px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+}
+
+.header__whitepaper-link:hover {
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+}
+
+.header__social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__social-container * + * {
+  margin-left: 1.1rem;
+}
+
+.header__social-container--link {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  padding: 0.4rem;
+}
+
+.header__social-container--link:hover {
+  color: var(--primary-color);
+}
+
+.mobile-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,24 +159,39 @@ Header
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-width: 10%;
-  height: 3.5rem;
+  width: 100%;
+  height: 6rem;
+  margin-top: 2rem;
 }
 
-.header-card__logo {
-  height: 3rem;
-  width: 3rem;
+.header__link-container--mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
-.header-card .brand-name {
-  font-family: 'Suez One', sans-serif;
-  font-weight: 400;
-  font-size: 1.4rem;
-  margin: 1rem 1rem 1rem 0;
+.header__whitepaper-link--mobile {
+  color: var(--secondary-color);
+  border: solid 1px var(--secondary-color);
+  border-radius: 45px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.9rem;
 }
 
-.header-text {
-  font-size: 1.3rem;
+.header__whitepaper-link--mobile:hover {
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
 }
 
 /*===================
@@ -227,17 +305,7 @@ Section 1
   background-color: var(--secondary-color);
   color: #fff;
   border: none;
-  cursor: pointer;
   font-size: 1rem;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.section-1-row-2 button:hover {
-  background-color: #fff;
-  color: #000;
-  border: solid 1px #000;
 }
 
 .section-1-row-3 {
@@ -438,7 +506,7 @@ Section 4
 
 .section-4 h2 {
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   color: var(--secondary-color);
 }
@@ -599,7 +667,7 @@ Section 6
   font-size: 3rem;
   font-weight: 800;
   color: var(--secondary-color);
-  padding: 2rem 0 2.5rem 0;
+  padding: 4rem 0 2.5rem 0;
 }
 
 .team-container {
@@ -676,6 +744,7 @@ Section 6
 .section-6 .horizontal-rule {
   height: 1px;
   width: 95%;
+  margin: 2rem 0;
   background-color: #000;
 }
 /*===================
@@ -712,40 +781,40 @@ footer {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   width: 95%;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .footer-row-1 .tag-line {
   color: var(--secondary-color);
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-.footer-card {
+.footer-branding__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   min-width: 10%;
   height: 3.5rem;
-  margin-right: 2rem;
 }
 
-.footer-card__logo {
+.footer-branding__logo {
   height: 3rem;
   width: 3rem;
 }
 
-.footer-card .brand-name {
+.footer-branding__name {
+  color: var(--secondary-color);
   font-family: 'Suez One', sans-serif;
   font-weight: 400;
-  font-size: 1.4rem;
-  margin: 1rem 1rem 1rem 0;
+  font-size: 1.8rem;
+  margin: 1rem 0;
 }
 
 .footer-row-2 {
@@ -774,7 +843,14 @@ footer {
 }
 
 .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 25vw;
+  max-width: 450px;
 }
 
 .form-container form {
@@ -791,6 +867,10 @@ footer {
   justify-content: flex-start;
 }
 
+.form-container h3 {
+  color: var(--secondary-color);
+}
+
 .form-container label {
   color: grey;
   font-size: 0.9rem;
@@ -804,7 +884,7 @@ footer {
 
 .footer__input-container__input {
   width: 100%;
-  height: 3.2rem;
+  height: 3rem;
   font-size: 1rem;
   border: solid 1px var(--secondary-color);
   border-radius: 4px;
@@ -884,10 +964,7 @@ Pop-up
   z-index: 100;
   position: absolute;
   opacity: 0;
-  right: 45px;
-  -webkit-transform: translateX(445px);
-  -ms-transform: translateX(445px);
-  transform: translateX(445px);
+  right: -445px;
 
   -webkit-transition: opacity 0.5s ease, -webkit-transform 0.3s ease-in-out;
 
@@ -902,9 +979,9 @@ Pop-up
 }
 
 .pop-up--show {
-  -webkit-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px);
+  -webkit-transform: translateX(-445px);
+  -ms-transform: translateX(-445px);
+  transform: translateX(-445px);
   opacity: 1;
 }
 
@@ -917,6 +994,7 @@ Pop-up
 .pop-up p {
   font-size: 1.2rem;
   font-weight: 600;
+  color: var(--secondary-color);
 }
 
 /*===================
@@ -946,13 +1024,60 @@ End of Common Queries
 /*===================
 Header MQs
 ===================*/
+@media screen and (max-width: 1200px) {
+  .header {
+    margin: 2rem 0 2rem 0;
+  }
+
+  .header-branding__logo {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .header-branding__name {
+    font-size: 1.6rem;
+  }
+
+  .header__whitepaper-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .header__social-container * + * {
+    margin-left: 0.7rem;
+  }
+
+  .header__social-container--link {
+    font-size: 1.1rem;
+    padding: 0.2rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
+  .desktop-header {
+    display: none;
+  }
+
   .header {
     margin: 2rem 0 0 0;
   }
+}
 
-  .header-text {
+@media screen and (min-width: 701px) {
+  .mobile-header {
     display: none;
+  }
+
+  .desktop-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__social-container * + * {
+    margin-left: 1.2rem;
   }
 }
 /*===================
@@ -1032,7 +1157,7 @@ Section 1 MQs
 
   .section-1-row-2 p {
     font-size: 1.3rem;
-    margin: 4rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
   }
 
   .card.game-card {
@@ -1050,6 +1175,12 @@ Section 1 MQs
 
   .game-genre {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-1-row-1 {
+    height: 2rem;
   }
 }
 
@@ -1196,7 +1327,7 @@ Section 3 MQs
 
 @media screen and (max-width: 1200px) {
   .section-3 {
-    margin-bottom: 2rem;
+    margin: 4rem 0 0 0;
   }
 
   .section-3-row-1 h2 {
@@ -1207,6 +1338,7 @@ Section 3 MQs
 @media screen and (max-width: 900px) {
   .section-3 {
     min-height: 43vh;
+    margin-top: 6rem;
   }
 
   .section-3-row-1 {
@@ -1225,7 +1357,7 @@ Section 3 MQs
 @media screen and (max-width: 700px) {
   .section-3 {
     min-height: 910px;
-    margin-bottom: 0;
+    margin-top: 2rem;
   }
 
   .section-3-row-1 {
@@ -1287,7 +1419,7 @@ Section 4 MQs
 @media screen and (max-width: 1920px) {
   .section-4 {
     height: 60vh;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     background-size: 70% 90%;
     background-position: right -40px;
   }
@@ -1306,16 +1438,15 @@ Section 4 MQs
     height: 42vh;
     background-size: 75% 75%;
     background-position: right -5px;
-    margin: 4rem 0 0 0;
+    margin: 6rem 0;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .section-4 {
     height: 35vh;
-    margin: 2rem 0;
+    margin: 7rem 0;
     background-image: none;
-    margin: 0;
   }
 
   .section-4 .content {
@@ -1335,12 +1466,8 @@ Section 4 MQs
     text-align: center;
   }
 
-  .section-4 h2 {
-    font-size: 1.5rem;
-  }
-
   .section-4 p {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -1349,7 +1476,7 @@ Section 4 MQs
     height: 30vh;
     min-height: 300px;
     background-image: none;
-    margin: 0 0 2rem 0;
+    margin: 1rem 0 5rem 0;
   }
 
   .section-4 h2 {
@@ -1498,7 +1625,6 @@ Section 5 MQs
 }
 
 /* Landscape / square-ish screen size */
-
 @media screen and (min-width: 1000px) and (max-width: 1200px) and (max-height: 1500px) {
   .section-5 {
     max-height: 600px;
@@ -1544,6 +1670,11 @@ Section 6 MQs
 }
 
 @media screen and (max-width: 1200px) {
+  .section-6-title h2 {
+    font-size: 2.8rem;
+    padding: 2rem 0 2.5rem 0;
+  }
+
   .member {
     width: 285px;
     height: 345px;
@@ -1575,22 +1706,57 @@ End of Section 6 MQs
 /*===================
 Footer MQs
 ===================*/
-@media screen and (max-width: 1500px) {
-  .footer-row-1 {
-    margin-top: 2rem;
+@media screen and (max-width: 1600px) {
+  .form-container {
+    width: 28vw;
   }
 
+  .footer__input-container__input {
+    height: 3rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
   .footer-row-1 .tag-line {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 
-  .input-container input {
-    height: 2.2rem;
+  .form-container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .form-container {
+    min-width: 380px;
   }
 
-  .input-container button {
-    width: 6rem;
+  .footer__input-container__input {
+    height: 2.9rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-row-1 {
+    margin-top: 0;
+  }
+
+  .form-container {
+    width: 370px;
+    min-width: 370px;
+  }
+
+  .footer__input-container__input {
+    height: 2.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form-container {
+    min-width: 330px;
   }
 }
 
@@ -1599,6 +1765,10 @@ Footer MQs
     max-height: 80vh;
     min-height: 550px;
     margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .footer-row-1 {
     margin-bottom: 1rem;
   }
 
@@ -1620,26 +1790,14 @@ Footer MQs
   .footer-row-2 h3 {
     margin-bottom: 1rem;
   }
-  .footer-row-2 .form-container {
+
+  .form-container {
     margin: 2.2rem 0;
+    min-width: 350px;
   }
 
   .form-container label {
     margin-bottom: 0.8rem;
-  }
-
-  .form-container {
-    width: 35vw;
-  }
-
-  .input-container input {
-    margin-bottom: 0.8rem;
-  }
-
-  .input-container button {
-    position: relative;
-    right: 0;
-    height: 2rem;
   }
 
   .footer-row-3 {
@@ -1652,8 +1810,31 @@ Footer MQs
     margin-top: 0;
   }
 
-  .form-container {
-    width: 45vw;
+  .footer__input-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer__input-container__input {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .footer__input-container__button {
+    position: static;
+    height: 2.5rem;
   }
 }
 
