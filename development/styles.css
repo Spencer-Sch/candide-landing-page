@@ -60,7 +60,7 @@ Header
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin: 2rem 0 5rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 .header-branding__container {
@@ -88,8 +88,10 @@ Header
   color: var(--secondary-color);
   border: solid 1px var(--secondary-color);
   border-radius: 45px;
-  padding: 0.7rem 1.2rem;
-  font-size: 1rem;
+  /* padding: 0.7rem 1.2rem;
+  font-size: 1rem; */
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
 }
 
 .header__whitepaper-link:hover {
@@ -814,7 +816,6 @@ Header MQs
 
   .header__whitepaper-link {
     padding: 0.5rem 1rem;
-    font-size: 0.9rem;
   }
 
   .header__social-container * + * {
@@ -834,6 +835,10 @@ Header MQs
 
   .header {
     margin: 2rem 0 0 0;
+  }
+
+  .header__whitepaper-link {
+    padding: 0.3rem 0.9rem;
   }
 }
 
@@ -1545,6 +1550,11 @@ Footer MQs
 @media screen and (max-width: 700px) {
   footer {
     margin-top: 0;
+  }
+
+  .form-container {
+    width: 280px;
+    min-width: 280px;
   }
 
   .footer__input-container {
