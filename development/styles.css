@@ -80,6 +80,7 @@ Header
   font-family: 'Suez One', sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
+  color: var(--secondary-color);
   margin: 1rem 0;
 }
 
@@ -239,15 +240,7 @@ Section 1
   background-color: var(--secondary-color);
   color: #fff;
   border: none;
-  cursor: pointer;
   font-size: 1rem;
-  transition: all 0.2s;
-}
-
-.section-1-row-2 button:hover {
-  background-color: #fff;
-  color: #000;
-  border: solid 1px #000;
 }
 
 .section-1-row-3 {
@@ -398,7 +391,7 @@ Section 4
 
 .section-4 h2 {
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   color: var(--secondary-color);
 }
@@ -526,7 +519,7 @@ Section 6
   font-size: 3rem;
   font-weight: 800;
   color: var(--secondary-color);
-  padding: 2rem 0 2.5rem 0;
+  padding: 4rem 0 2.5rem 0;
 }
 
 .team-container {
@@ -586,6 +579,7 @@ Section 6
 .section-6 .horizontal-rule {
   height: 1px;
   width: 95%;
+  margin: 2rem 0;
   background-color: #000;
 }
 /*===================
@@ -931,7 +925,7 @@ Section 1 MQs
 
   .section-1-row-2 p {
     font-size: 1.3rem;
-    margin: 4rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
   }
 
   .card.game-card {
@@ -1101,7 +1095,7 @@ Section 3 MQs
 
 @media screen and (max-width: 1200px) {
   .section-3 {
-    margin-bottom: 2rem;
+    margin: 4rem 0 0 0;
   }
 
   .section-3-row-1 h2 {
@@ -1112,6 +1106,7 @@ Section 3 MQs
 @media screen and (max-width: 900px) {
   .section-3 {
     min-height: 43vh;
+    margin-top: 6rem;
   }
 
   .section-3-row-1 {
@@ -1130,7 +1125,7 @@ Section 3 MQs
 @media screen and (max-width: 700px) {
   .section-3 {
     min-height: 910px;
-    margin-bottom: 0;
+    margin-top: 2rem;
   }
 
   .section-3-row-1 {
@@ -1187,7 +1182,7 @@ Section 4 MQs
 @media screen and (max-width: 1920px) {
   .section-4 {
     height: 60vh;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     background-size: 70% 90%;
     background-position: right -40px;
   }
@@ -1206,16 +1201,15 @@ Section 4 MQs
     height: 42vh;
     background-size: 75% 75%;
     background-position: right -5px;
-    margin: 4rem 0 0 0;
+    margin: 6rem 0;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .section-4 {
     height: 35vh;
-    margin: 2rem 0;
+    margin: 7rem 0;
     background-image: none;
-    margin: 0;
   }
 
   .section-4 .content {
@@ -1227,11 +1221,11 @@ Section 4 MQs
   }
 
   .section-4 h2 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   .section-4 p {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -1240,7 +1234,7 @@ Section 4 MQs
     height: 30vh;
     min-height: 300px;
     background-image: none;
-    margin: 0 0 2rem 0;
+    margin: 1rem 0 5rem 0;
   }
 
   .section-4 h2 {
@@ -1418,6 +1412,11 @@ Section 6 MQs
 }
 
 @media screen and (max-width: 1200px) {
+  .section-6-title h2 {
+    font-size: 2.8rem;
+    padding: 2rem 0 2.5rem 0;
+  }
+
   .member {
     width: 285px;
     height: 345px;
@@ -1462,7 +1461,7 @@ Footer MQs
 
 @media screen and (max-width: 1500px) {
   .footer-row-1 {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
 
   .footer-row-1 .tag-line {
@@ -1486,9 +1485,13 @@ Footer MQs
 }
 
 @media screen and (max-width: 1200px) {
+  .footer-row-1 {
+    margin-top: 0;
+  }
+
   .form-container {
-    width: 360px;
-    min-width: 360px;
+    width: 370px;
+    min-width: 370px;
   }
 
   .footer__input-container__input {
@@ -1558,6 +1561,7 @@ Footer MQs
 
   .footer__input-container__input {
     margin-bottom: 0.5rem;
+    text-align: center;
   }
 
   .footer__input-container__button {
