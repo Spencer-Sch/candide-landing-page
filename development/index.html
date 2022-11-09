@@ -241,14 +241,7 @@
             <img src="assets/arthur.png" class="member__img" alt="male silhouette" />
             <div class="name-title">
               <h3>Arthur</h3>
-              <p>Lead development</p>
-            </div>
-          </div>
-          <div class="member">
-            <div class="member__img--empty-blue"></div>
-            <div class="name-title">
-              <h3>Edouard</h3>
-              <p>Back-end developer</p>
+              <p>Back-end development</p>
             </div>
           </div>
           <div class="member">
@@ -297,14 +290,19 @@
           <a href="mailto:contact@candide.site">contact@candide.site</a>
         </div>
         <div class="form-container">
-          <form id="form" action="" method="POST">
+          <form id="form">
             <h3>Subscribe to updates</h3>
             <label for="email">Enter your email *</label>
             <div class="footer__input-container">
-              <input id="email" class="footer__input-container__input" type="email" name="email" placeholder="example@host.com" title="Must be a valid email address" required />
-              <button class="footer__input-container__button" type="submit">Send</button>
+              <input id="email" class="footer__input-container__input footer__input-container__input--valid" name="email" placeholder="example@host.com" />
+              <button id="form-button" class="footer__input-container__button" type="submit">
+                <p
+                id="form-button-text" class="footer__input-container__button--text">Send</p>
+                <i id="loading-spinner" class="hide"></i>
+              </button>
             </div>
           </form>
+          <p id="form-error" class="footer__form__errorMsg hide-errorMsg">Please enter a valid email address</p>
         </div>
         <div class="social">
           <h3>Social Media</h3>
