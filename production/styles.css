@@ -848,6 +848,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -891,10 +895,24 @@ footer {
   border: solid 1px var(--secondary-color);
   border-radius: 4px;
   padding: 1rem;
+  -webkit-transition: border-color, background-color 0.3s;
+  -o-transition: border-color, background-color 0.3s;
+  transition: border-color, background-color 0.3s;
 }
 
-.footer__input-container__input:focus {
+.footer__input-container__input--valid {
   border: solid 1px var(--primary-color);
+}
+
+.footer__input-container__input--valid:focus {
+  border: solid 1px var(--primary-color);
+  background-color: rgb(153, 0, 230, 0.2);
+}
+
+.footer__input-container__input--invalid,
+.footer__input-container__input--invalid:focus {
+  border: solid 1px rgb(66, 66, 66);
+  background-color: rgba(240, 128, 128, 0.4);
 }
 
 .footer__input-container__button {
@@ -909,13 +927,83 @@ footer {
   border-radius: 45px;
   border: none;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: color, background-color 0.3s;
+  -o-transition: color, background-color 0.3s;
+  transition: color, background-color 0.3s;
 }
 
 .footer__input-container__button:hover {
   background-color: var(--secondary-color);
+}
+
+.footer__input-container__button--disabled {
+  color: rgb(185, 185, 185);
+  background-color: rgb(66, 66, 66);
+  cursor: not-allowed;
+}
+
+.footer__input-container__button--disabled:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+.footer__input-container__button--loading {
+  background-color: var(--secondary-color);
+  cursor: not-allowed;
+}
+
+.footer__input-container__button--loading:hover {
+  background-color: var(--secondary-color);
+}
+
+.footer__input-container__button--text {
+  color: #fff;
+  font-weight: 800;
+}
+
+.footer__input-container__button--spinner {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.5rem;
+  -webkit-animation: spin 1.8s linear infinite;
+  animation: spin 1.8s linear infinite;
+}
+
+.hide {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.footer__form__errorMsg {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.hide-errorMsg {
+  visibility: hidden;
+}
+
+.show-errorMsg {
+  visibility: visible;
 }
 
 .footer-row-2 .social {
