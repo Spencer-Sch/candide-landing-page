@@ -548,12 +548,15 @@ Section 6
   width: 80%;
 }
 
-.member__img--empty-blue {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 80%;
-  height: 82%;
+.blue-background {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#4284fc),
+    to(#2d3eed)
+  );
+  background-image: -o-linear-gradient(#4284fc, #2d3eed);
   background-image: linear-gradient(#4284fc, #2d3eed);
 }
 
