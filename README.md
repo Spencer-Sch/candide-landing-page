@@ -1,13 +1,20 @@
-# Candide Landing Page
+# <img align="left" alt="Candide" width="36px" src="./logo.png" />Candide Landing Page
+
+### ⚠️ This version of the site is depricated and no longer in use ⚠️
+
+- The production version of the Candide landing page has been migrated to a private repo on Gitlab
+  <br>
+- Details about the up-to-date project can be found here: [Readme](https://github.com/Spencer-Sch/candide-production-landing-page)
+  <br>
+- You can visit the live site here: [Candide](https://candide.site/)
+
+---
 
 I built a clone of the company's landing page in HTML/CSS/JS
-
-A live demo can be seen here: [live demo](https://fanciful-hummingbird-900183.netlify.app/)
 
 ## About Candide
 
 We are a small, international, team that is passionate about providing value to p2e players.
-
 <br>
 
 The Candide marketplace will allow users to rent p2e NFTs for their favorite games.
